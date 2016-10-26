@@ -26,4 +26,16 @@
         android:id="@+id/button"
         android:shadowColor="@android:color/background_light"
        />
+
+    <Button
+        android:layout_marginTop="80sp"
+        android:layout_marginBottom="@android:dimen/app_icon_size"
+        android:text="Click to Go Next Activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        android:shadowColor="@android:color/background_light"
+        />
+
+
 </LinearLayout>
