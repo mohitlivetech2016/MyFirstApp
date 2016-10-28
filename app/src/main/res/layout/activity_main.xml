@@ -12,7 +12,7 @@
     android:orientation="vertical"
     >
     <TextView
-        android:layout_marginTop="30sp"
+        android:layout_marginTop="5sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/text1"
@@ -20,7 +20,7 @@
         android:gravity="center"
         />
     <Button
-        android:layout_marginTop="80sp"
+        android:layout_marginTop="5sp"
         android:layout_marginBottom="@android:dimen/app_icon_size"
         android:text="Click to Show Hello"
         android:layout_width="match_parent"
@@ -30,12 +30,55 @@
         />
 
     <Button
-        android:layout_marginTop="80sp"
+        android:layout_marginTop="5sp"
         android:layout_marginBottom="@android:dimen/app_icon_size"
         android:text="Click Here for Linear Layout Example"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button1"
+        android:shadowColor="@android:color/background_light"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity to Pass values"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:inputType="number"
+            android:hint="Enter Value 1"
+            android:id="@+id/text11"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:inputType="number"
+            android:hint="Enter Value 2"
+            android:id="@+id/text22"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="@android:dimen/app_icon_size"
+        android:text="Click Here To Calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
         android:shadowColor="@android:color/background_light"
         />
 

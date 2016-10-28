@@ -24,13 +24,15 @@
             android:name=".Main3Activity"
             android:label="Main3Activity"
             android:parentActivityName=".Main2Activity" />
-
-
-        <activity android:name=".Main4Activity"
+        <activity
+            android:name=".Main4Activity"
             android:label="Main4Activity"
-            android:parentActivityName=".Main3Activity"
+            android:parentActivityName=".Main3Activity" />
+        <activity android:name=".Main5Activity"
 
-            ></activity>
+            android:parentActivityName=".MainActivity"
+
+        />
     </application>
 
 </manifest>

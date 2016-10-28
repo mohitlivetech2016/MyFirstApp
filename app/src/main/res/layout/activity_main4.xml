@@ -20,7 +20,9 @@
         android:layout_height="50sp"
         android:layout_gravity="center_vertical"
         android:text="HAPPY DIWALI :)"
-        android:textSize="40sp" />
+        android:textSize="40sp"
+        android:textColor="#FF6347"
+        />
 
 
 
@@ -30,7 +32,7 @@
         android:layout_gravity="center|bottom"
         android:text="This is Frame Layout"
         android:textSize="40dp"
-        android:textColor=""
+        android:textColor="#0000ff"
         />
 
 </FrameLayout>

@@ -13,8 +13,9 @@ import android.widget.Toast;
 
 
     public class MainActivity extends AppCompatActivity {
-        Button button,button1;
+        Button button,button1,button2;
         TextView text;
+        EditText e1,e2;
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -23,7 +24,9 @@ import android.widget.Toast;
             button=(Button)findViewById(R.id.button);
             text=(TextView)findViewById(R.id.text1);
             button1=(Button)findViewById(R.id.button1);
-
+            e1=(EditText)findViewById(R.id.text11);
+            e2=(EditText)findViewById(R.id.text22);
+            button2=(Button) findViewById(R.id.button2);
             button.setOnClickListener(new View.OnClickListener()
             {
                 @Override
@@ -42,6 +45,22 @@ import android.widget.Toast;
 
                     Intent intent=new Intent(MainActivity.this,Main2Activity.class);
                     startActivity(intent);
+                }
+            });
+
+            button2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    Intent intent=new Intent(MainActivity.this,Main5Activity.class);
+                    Bundle b = new Bundle();
+
+                    //Inserts a String value into the mapping of this Bundle
+                    b.putString("value1", e1.getText().toString());
+                    b.putString("value2", e2.getText().toString());
+                    intent.putExtras(b);
+                    startActivity(intent);
+
                 }
             });
 

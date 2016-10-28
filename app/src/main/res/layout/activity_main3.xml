@@ -1,119 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
 
     <TextView
-        android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:width="90sp"
-        android:gravity="center"
-        android:text="This Relative layout "
+        android:text="This linear layout "
         android:textSize="40sp"
+        android:gravity="center"
+        android:id="@+id/text"
 
         />
 
 
-    <TextView
-        android:id="@+id/F_name"
-        android:layout_width="150sp"
-        android:layout_height="30sp"
-        android:layout_below="@+id/text"
-        android:layout_weight="2"
-        android:text="@string/F_name"
+
+        <TextView
+            android:text="@string/F_name"
+            android:layout_width="150sp"
+            android:layout_height="30sp"
+            android:layout_weight="2"
+            android:layout_below="@+id/text"
+            android:id="@+id/F_name"
 
 
-        />
+            />
 
-    <EditText
-        android:id="@+id/f_name"
-        android:layout_width="match_parent"
-        android:layout_height="30sp"
-        android:layout_below="@+id/text"
-        android:layout_toRightOf="@+id/F_name"
-        android:layout_weight="1" />
-
-
-    <TextView
-        android:id="@+id/M_name"
-        android:layout_width="150sp"
-        android:layout_height="30sp"
-        android:layout_below="@id/F_name"
-        android:layout_weight="2"
-        android:text="@string/M_name" />
-
-    <EditText
-        android:id="@+id/m_name"
-        android:layout_width="match_parent"
-        android:layout_height="30sp"
-
-        android:layout_below="@+id/f_name"
-        android:layout_toRightOf="@+id/M_name" />
+        <EditText
+            android:id="@+id/f_name"
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/F_name"
+            android:layout_below="@+id/text"
+            />
 
 
-    <TextView
-        android:id="@+id/L_name"
-        android:layout_width="150sp"
-        android:layout_height="30sp"
-
-        android:layout_below="@id/M_name"
-        android:text="@string/L_name"
 
 
-        />
-
-    <EditText
-        android:id="@+id/l_name"
-        android:layout_width="match_parent"
-        android:layout_height="30sp"
-        android:layout_below="@+id/m_name"
-        android:layout_toRightOf="@+id/L_name" />
 
 
-    <TextView
-        android:id="@+id/M_no1"
-        android:layout_width="150sp"
-        android:layout_height="30sp"
-        android:layout_below="@id/L_name"
-        android:text="@string/M_no" />
+        <TextView
+            android:text="@string/M_name"
+            android:layout_width="150sp"
+            android:layout_height="30sp"
+            android:layout_weight="2"
+            android:id="@+id/M_name"
+            android:layout_below="@id/F_name"
+            />
 
-    <EditText
-        android:id="@+id/m_no"
-        android:layout_width="match_parent"
-        android:layout_height="30sp"
-        android:layout_below="@+id/l_name"
-        android:layout_toRightOf="@+id/M_no" />
+        <EditText
+            android:id="@+id/m_name"
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+
+            android:layout_toRightOf="@+id/M_name"
+            android:layout_below="@+id/f_name"
+            />
 
 
-    <TextView
-        android:id="@+id/M_no"
-        android:layout_width="150sp"
-        android:layout_height="30sp"
 
-        android:layout_below="@id/M_no1"
-        android:text="@string/Address" />
+        <TextView
+            android:text="@string/L_name"
+            android:layout_width="150sp"
+            android:layout_height="30sp"
 
-    <EditText
-        android:id="@+id/Address"
-        android:layout_width="match_parent"
-        android:layout_height="30sp"
-        android:layout_below="@+id/m_no"
-        android:layout_toRightOf="@+id/M_no" />
+            android:id="@+id/L_name"
+            android:layout_below="@id/M_name"
+
+
+            />
+
+        <EditText
+            android:id="@+id/l_name"
+            android:layout_height="30sp"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/L_name"
+            android:layout_below="@+id/m_name"
+            />
+
+
+
+        <TextView
+            android:text="@string/M_no"
+            android:layout_width="150sp"
+            android:layout_height="30sp"
+            android:id="@+id/M_no1"
+            android:layout_below="@id/L_name"
+            />
+
+        <EditText
+            android:id="@+id/m_no"
+            android:layout_height="30sp"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/M_no"
+            android:layout_below="@+id/l_name"
+            />
+
+
+
+
+        <TextView
+            android:text="@string/Address"
+            android:layout_width="150sp"
+            android:layout_height="30sp"
+
+            android:id="@+id/M_no"
+            android:layout_below="@id/M_no1"
+            />
+
+        <EditText
+            android:id="@+id/Address"
+            android:layout_height="30sp"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/M_no"
+            android:layout_below="@+id/m_no"
+            />
+
+
+
+
+
 
 
     <Button
 
-        android:id="@+id/main_button"
+        android:layout_gravity="right"
+        android:text="click for relative layout example"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/main_button"
         android:layout_below="@+id/Address"
-        android:layout_gravity="right"
-        android:text="click for frame layout example"
-
         />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </RelativeLayout>
