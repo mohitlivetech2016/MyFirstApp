@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Fill Form And Display</string>
+    <string name="app_name">Example App</string>
     <string name="F_name">First Name</string>
     <string name="M_name">Middle Name</string>
     <string name="L_name">Last Name</string>
@@ -7,5 +7,6 @@
     <string name="Address">Address</string>
 
     <string name="submit">Submit Detail</string>
+    <string name="title_activity_main2">Main2Activity</string>
 
 </resources>

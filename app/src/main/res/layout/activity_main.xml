@@ -11,121 +11,33 @@
     tools:context="com.example.android.myfirstapp.MainActivity"
     android:orientation="vertical"
     >
-
-
-    <LinearLayout
-        android:layout_marginTop="15sp"
+    <TextView
+        android:layout_marginTop="30sp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:text="@string/F_name"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
-            />
-
-        <EditText
-            android:id="@+id/f_name"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginTop="15sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:textSize="50sp"
+        android:gravity="center"
+        />
+    <Button
+        android:layout_marginTop="80sp"
+        android:layout_marginBottom="@android:dimen/app_icon_size"
+        android:text="Click to Show Hello"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:text="@string/M_name"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
-            />
-
-        <EditText
-            android:id="@+id/m_name"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            />
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_marginTop="15sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:text="@string/L_name"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
-            />
-
-        <EditText
-            android:id="@+id/l_name"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginTop="15sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:text="@string/M_no"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
-            />
-
-        <EditText
-            android:id="@+id/m_no"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginTop="15sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:text="@string/Address"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
-            />
-
-        <EditText
-            android:id="@+id/Address"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            />
-
-
-    </LinearLayout>
-
-
-
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:shadowColor="@android:color/background_light"
+        />
 
     <Button
-
-        android:layout_gravity="right"
-        android:text="@string/submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_marginTop="80sp"
+        android:layout_marginBottom="@android:dimen/app_icon_size"
+        android:text="Click Here for Linear Layout Example"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        android:shadowColor="@android:color/background_light"
+        />
 
 
 

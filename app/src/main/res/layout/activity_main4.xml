@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:text="Name"
+        android:textSize="40sp" />
+
+    <EditText
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:layout_gravity="top|right"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_gravity="center_vertical"
+        android:text="HAPPY DIWALI :)"
+        android:textSize="40sp" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:text="This is Frame Layout"
+        android:textSize="40dp"
+        android:textColor=""
+        />
+
+</FrameLayout>
