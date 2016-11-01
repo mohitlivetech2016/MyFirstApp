@@ -8,21 +8,30 @@ import android.widget.Button;
 
 public class Main3Activity extends AppCompatActivity {
 
+    public Button getmBtn_ClickRLayout() {
+        return mBtn_ClickRLayout;
+    }
 
-    Button b2;
+    public void setmBtn_ClickRLayout(Button mBtn_ClickRLayout) {
+        this.mBtn_ClickRLayout = mBtn_ClickRLayout;
+    }
+
+    private Button mBtn_ClickRLayout;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
 
-    b2=(Button)findViewById(R.id.main_button);
+        mBtn_ClickRLayout = (Button) findViewById(R.id.idBtn_ClickRLayout);
 
-        b2.setOnClickListener(new View.OnClickListener() {
+        mBtn_ClickRLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent=new Intent(Main3Activity.this,Main4Activity.class);
+                Intent intent = new Intent(Main3Activity.this, Main4Activity.class);
                 startActivity(intent);
 
             }
