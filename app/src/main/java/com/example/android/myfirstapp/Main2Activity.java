@@ -13,6 +13,7 @@ public class Main2Activity extends AppCompatActivity {
 
 
     Button b2;
+    Button b3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
