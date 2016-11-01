@@ -12,6 +12,7 @@
     android:weightSum="1"
     tools:context="com.example.android.myfirstapp.Main5Activity">
 
+
     <TextView
         android:id="@+id/idTv_View1"
         android:layout_width="match_parent"
@@ -26,10 +27,16 @@
         android:layout_height="50sp"
         android:text="TextView" />
 
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="'ADD'OnClick XML Example "
+        />
     <Button
         android:id="@+id/idBtn_ClickToAdd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:onClick="CallFirstActivity"
         android:text="Add" />
 </LinearLayout>
