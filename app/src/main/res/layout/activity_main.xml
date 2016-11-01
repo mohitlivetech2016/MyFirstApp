@@ -4,85 +4,79 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.android.myfirstapp.MainActivity"
-    android:orientation="vertical"
-    >
+    tools:context="com.example.android.myfirstapp.MainActivity">
+
     <TextView
-        android:layout_marginTop="5sp"
+        android:id="@+id/idTvDisplay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text1"
-        android:textSize="50sp"
+        android:layout_marginTop="5sp"
         android:gravity="center"
-        />
-    <Button
-        android:layout_marginTop="5sp"
-        android:layout_marginBottom="@android:dimen/app_icon_size"
-        android:text="Click to Show Hello"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:shadowColor="@android:color/background_light"
-        />
+        android:textSize="50sp" />
 
     <Button
-        android:layout_marginTop="5sp"
-        android:layout_marginBottom="@android:dimen/app_icon_size"
-        android:text="Click Here for Linear Layout Example"
+        android:id="@+id/idBtnTvShow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button1"
+        android:layout_marginBottom="@android:dimen/app_icon_size"
+        android:layout_marginTop="5sp"
         android:shadowColor="@android:color/background_light"
-        />
+        android:text="Click to Show Hello" />
+
+    <Button
+        android:id="@+id/idBtnNewLout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@android:dimen/app_icon_size"
+        android:layout_marginTop="5sp"
+        android:shadowColor="@android:color/background_light"
+        android:text="Click Here for Linear Layout Example" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Activity to Pass values"
-        android:textSize="20sp"
-        android:textColor="#000000"
-        android:textStyle="bold"
         android:gravity="center"
-        />
+        android:text="Activity to Pass values"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
+
         <EditText
+            android:id="@+id/idEtValue1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:inputType="number"
             android:hint="Enter Value 1"
-            android:id="@+id/text11"
-            />
+            android:inputType="number" />
+
         <EditText
+            android:id="@+id/idEtValue2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:inputType="number"
             android:hint="Enter Value 2"
-            android:id="@+id/text22"
-            />
+            android:inputType="number" />
 
     </LinearLayout>
 
     <Button
-        android:layout_marginTop="5sp"
-        android:layout_marginBottom="@android:dimen/app_icon_size"
-        android:text="Click Here To Calculate"
+        android:id="@+id/idBtnCalc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button2"
+        android:layout_marginBottom="@android:dimen/app_icon_size"
+        android:layout_marginTop="5sp"
         android:shadowColor="@android:color/background_light"
-        />
-
-
+        android:text="Click Here To Calculate" />
 
 
 </LinearLayout>
