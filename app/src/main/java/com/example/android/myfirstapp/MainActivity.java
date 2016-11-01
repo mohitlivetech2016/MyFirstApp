@@ -37,12 +37,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public EditText getmEvValue1() {
-        return mEtValue1;
+    public EditText getmEvInsertValue1() {
+        return mEtInsertValue1;
     }
 
-    public void setmEvValue1(EditText mEvValue1) {
-        this.mEtValue1 = mEvValue1;
+    public void setmEvInsertValue1(EditText mEvValue1) {
+        this.mEtInsertValue1 = mEvValue1;
     }
 
     public TextView getmTxtDisplay() {
@@ -53,16 +53,16 @@ public class MainActivity extends AppCompatActivity {
         this.mTvDisplay = mTxtDisplay;
     }
 
-    public EditText getmEvValue2() {
-        return mEtValue2;
+    public EditText getmEvInsertValue2() {
+        return mEtInsertValue2;
     }
 
-    public void setmEvValue2(EditText mEvValue2) {
-        this.mEtValue2 = mEvValue2;
+    public void setmEvInsertValue2(EditText mEvValue2) {
+        this.mEtInsertValue2 = mEvValue2;
     }
 
-    private EditText mEtValue1;
-    private EditText mEtValue2;
+    private EditText mEtInsertValue1;
+    private EditText mEtInsertValue2;
     private TextView mTvDisplay;
     private Button mBtnTvDisplay;
     private Button mBtnNewLout;
@@ -76,8 +76,8 @@ public class MainActivity extends AppCompatActivity {
         mBtnTvDisplay = (Button) findViewById(R.id.idBtnTvShow);
         mTvDisplay = (TextView) findViewById(R.id.idTvDisplay);
         mBtnNewLout = (Button) findViewById(R.id.idBtnNewLout);
-        mEtValue1 = (EditText) findViewById(R.id.idEtValue1);
-        mEtValue2 = (EditText) findViewById(R.id.idEtValue2);
+        mEtInsertValue1 = (EditText) findViewById(R.id.idEtInsertValue1);
+        mEtInsertValue2 = (EditText) findViewById(R.id.idEtInsertValue2);
         mBtnCalc = (Button) findViewById(R.id.idBtnCalc);
         mBtnTvDisplay.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -106,8 +106,8 @@ public class MainActivity extends AppCompatActivity {
                 Bundle b = new Bundle();
 
                 //Inserts a String value into the mapping of this Bundle
-                b.putString("value1", mEtValue1.getText().toString());
-                b.putString("value2", mEtValue2.getText().toString());
+                b.putString("value1", mEtInsertValue1.getText().toString());
+                b.putString("value2", mEtInsertValue2.getText().toString());
                 intent.putExtras(b);
                 startActivity(intent);
 
