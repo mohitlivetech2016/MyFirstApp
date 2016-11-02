@@ -3,6 +3,7 @@ package com.example.android.myfirstapp;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class Main5Activity extends AppCompatActivity {
@@ -37,9 +38,18 @@ public class Main5Activity extends AppCompatActivity {
         mTv_View1 = (TextView) findViewById(R.id.idTv_View1);
         mTv_View2 = (TextView) findViewById(R.id.idTv_View2);
 
-        //  val1.setText(b.getCharSequence("value1"));
-        // val2.setText(b.getCharSequence("value2"));
-        //  a = Integer.valueOf((String) (b.getCharSequence("value1")));
-        // c = Integer.valueOf((String) (b.getCharSequence("value2")));
+        mTv_View1.setText(b.getCharSequence("value1"));
+        mTv_View2.setText(b.getCharSequence("value2"));
     }
+
+    public void CallFirstActivity(View v) {
+
+        Intent intent = new Intent(Main5Activity.this, MainActivity.class);
+        startActivity(intent);
+
+    }
+
+
+    //  a = Integer.valueOf((String) (b.getCharSequence("value1")));
+    // c = Integer.valueOf((String) (b.getCharSequence("value2")));
 }
