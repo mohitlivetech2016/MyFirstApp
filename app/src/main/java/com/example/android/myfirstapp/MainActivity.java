@@ -2,6 +2,7 @@ package com.example.android.myfirstapp;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -102,11 +103,21 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnNewLout;
     private Button mBtn_PassValue;
 
+    public Button getmBtn_Fragment_layout() {
+        return mBtn_Fragment_layout;
+    }
+
+    public void setmBtn_Fragment_layout(Button mBtn_Fragment_layout) {
+        this.mBtn_Fragment_layout = mBtn_Fragment_layout;
+    }
+
+    private Button mBtn_Fragment_layout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        mBtn_Fragment_layout=(Button)findViewById(R.id.idBtn_FragmentLayout);
         mBtncalculate =(Button)findViewById(R.id.idBtn_calculator);
         mBtnTvDisplay = (Button) findViewById(R.id.idBtnTvShow);
         mTvDisplay = (TextView) findViewById(R.id.idTvDisplay);
@@ -144,7 +155,8 @@ public class MainActivity extends AppCompatActivity {
                 b.putString("value1", mEtInsertValue1.getText().toString());
                 b.putString("value2", mEtInsertValue2.getText().toString());
                 intent.putExtras(b);
-                startActivity(intent);
+               // startActivity(intent);
+                startActivityForResult(intent, 1);
 
             }
         });
@@ -159,8 +171,26 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-    }
 
+        mBtn_Fragment_layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, Main7Activity.class);
+                startActivity(intent);
+            }
+        });
+
+    }
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 1) {
+            if(resultCode == RESULT_OK){
+                String stredittext=data.getStringExtra("message");
+                mTvDisplay.setText(stredittext);
+            }
+        }
+    }
 }
 
 
