@@ -47,6 +47,7 @@ public class Main6Activity extends AppCompatActivity {
     private EditText mEt_Value1,mEt_Value2;
     private Button  mBtn_Add;
     private TextView mTv_DisplayValue;
+    double mValue1,mvalue2,mResult;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,8 +63,10 @@ public class Main6Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                int add=Integer.parseInt(mEt_Value1.getText().toString())+Integer.parseInt(mEt_Value2.getText().toString());
-                    mTv_DisplayValue.setText(add);
+                mValue1 = Double.parseDouble(mEt_Value1.getText().toString());
+                mvalue2 = Double.parseDouble(mEt_Value2.getText().toString());
+                mResult = mValue1 + mvalue2;
+                mTv_DisplayValue.setText(Double.toString(mResult));
 
             }
         });
