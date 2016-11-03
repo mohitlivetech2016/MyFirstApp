@@ -28,12 +28,12 @@ public class MainActivity extends AppCompatActivity {
         this.mBtnNewLout = mBtnNewLout;
     }
 
-    public Button getmBtnCalc() {
-        return mBtnCalc;
+    public Button getmBtn_PassValue() {
+        return mBtn_PassValue;
     }
 
-    public void setmBtnCalc(Button mBtnCalc) {
-        this.mBtnCalc = mBtnCalc;
+    public void setmBtn_PassValue(Button mBtn_PassValue) {
+        this.mBtn_PassValue = mBtn_PassValue;
     }
 
 
@@ -61,24 +61,59 @@ public class MainActivity extends AppCompatActivity {
         this.mEtInsertValue2 = mEvValue2;
     }
 
+
+    public Button getmBtncalculate() {
+        return mBtncalculate;
+    }
+
+    public void setmBtncalculate(Button mBtncalculate) {
+        this.mBtncalculate = mBtncalculate;
+    }
+
+    public EditText getmEtInsertValue1() {
+        return mEtInsertValue1;
+    }
+
+    public void setmEtInsertValue1(EditText mEtInsertValue1) {
+        this.mEtInsertValue1 = mEtInsertValue1;
+    }
+
+    public EditText getmEtInsertValue2() {
+        return mEtInsertValue2;
+    }
+
+    public void setmEtInsertValue2(EditText mEtInsertValue2) {
+        this.mEtInsertValue2 = mEtInsertValue2;
+    }
+
+    public TextView getmTvDisplay() {
+        return mTvDisplay;
+    }
+
+    public void setmTvDisplay(TextView mTvDisplay) {
+        this.mTvDisplay = mTvDisplay;
+    }
+
+    private Button mBtncalculate;
     private EditText mEtInsertValue1;
     private EditText mEtInsertValue2;
     private TextView mTvDisplay;
     private Button mBtnTvDisplay;
     private Button mBtnNewLout;
-    private Button mBtnCalc;
+    private Button mBtn_PassValue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        mBtncalculate =(Button)findViewById(R.id.idBtn_calculator);
         mBtnTvDisplay = (Button) findViewById(R.id.idBtnTvShow);
         mTvDisplay = (TextView) findViewById(R.id.idTvDisplay);
         mBtnNewLout = (Button) findViewById(R.id.idBtnNewLout);
         mEtInsertValue1 = (EditText) findViewById(R.id.idEtInsertValue1);
         mEtInsertValue2 = (EditText) findViewById(R.id.idEtInsertValue2);
-        mBtnCalc = (Button) findViewById(R.id.idBtnCalc);
+        mBtn_PassValue = (Button) findViewById(R.id.idBtnCalc);
         mBtnTvDisplay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -98,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mBtnCalc.setOnClickListener(new View.OnClickListener() {
+        mBtn_PassValue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -114,30 +149,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-    }
-
-
-
-    /*@Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        b1 =(Button)findViewById(R.id.main_button);
-        b1.setOnClickListener(new View.OnClickListener() {
+        mBtncalculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-
-                *//*Intent intent=new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("http://www.javatpoint.com"));
-                startActivity(intent);*//*
-                Intent toy=new Intent(MainActivity.this,Main2Activity.class);
-                startActivity(toy);
+                Intent intent = new Intent(MainActivity.this, Main6Activity.class);
+                startActivity(intent);
 
             }
-        });*/
+        });
 
+    }
 
 }
 
