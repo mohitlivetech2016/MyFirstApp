@@ -144,7 +144,8 @@ public class MainActivity extends AppCompatActivity {
                 b.putString("value1", mEtInsertValue1.getText().toString());
                 b.putString("value2", mEtInsertValue2.getText().toString());
                 intent.putExtras(b);
-                startActivity(intent);
+               // startActivity(intent);
+                startActivityForResult(intent, 1);
 
             }
         });
@@ -159,8 +160,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-    }
 
+    }
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 1) {
+            if(resultCode == RESULT_OK){
+                String stredittext=data.getStringExtra("message");
+                mTvDisplay.setText(stredittext);
+            }
+        }
+    }
 }
 
 
