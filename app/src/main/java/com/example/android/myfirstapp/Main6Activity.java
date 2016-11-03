@@ -71,11 +71,5 @@ public class Main6Activity extends AppCompatActivity {
             }
         });
 
-
-
-
     }
-
-
-
 }
