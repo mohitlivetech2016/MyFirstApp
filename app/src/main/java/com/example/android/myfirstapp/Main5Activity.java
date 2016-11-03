@@ -44,7 +44,7 @@ public class Main5Activity extends AppCompatActivity {
 
     public void CallFirstActivity(View v) {
 
-        Intent intent = new Intent(Main5Activity.this, MainActivity.class);
+        Intent intent = new Intent(Main5Activity.this, Main6Activity.class);
         startActivity(intent);
 
     }

@@ -31,12 +31,13 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="'ADD'OnClick XML Example "
+        android:text="OnClick XML Example "
+        android:gravity="center"
         />
     <Button
         android:id="@+id/idBtn_ClickToAdd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="CallFirstActivity"
-        android:text="Add" />
+        android:text="Click for Calculato Activity" />
 </LinearLayout>
