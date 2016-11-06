@@ -36,6 +36,16 @@
         android:layout_marginTop="5sp"
         android:shadowColor="@android:color/background_light"
         android:text="Click Here for Linear Layout Example" />
+    
+     <Button
+        android:id="@+id/idBtnNewLout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@android:dimen/app_icon_size"
+        android:layout_marginTop="5sp"
+        android:shadowColor="@android:color/background_light"
+        android:text="Git Download" />
+
 
     <TextView
         android:layout_width="match_parent"
